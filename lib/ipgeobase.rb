@@ -4,5 +4,8 @@ require_relative "ipgeobase/version"
 
 module Ipgeobase
   class Error < StandardError; end
-  # Your code goes here...
+
+  def ip_metadata_receive(ip_address)
+    ip_address.to_s
+  end
 end

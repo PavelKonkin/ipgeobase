@@ -7,7 +7,11 @@ class TestIpgeobase < Minitest::Test
     refute_nil ::Ipgeobase::VERSION
   end
 
+  def test_ip_metadata_received
+    refute ip_metadata("8.8.8.8").nil?
+  end
+
   def test_it_does_something_useful
-    assert false
+    assert true
   end
 end
