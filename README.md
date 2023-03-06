@@ -20,10 +20,15 @@ If bundler is not being used to manage dependencies, install the gem by executin
 require 'ipgeobase'
 
 ip_meta = Ipgeobase.lookup('8.8.8.8')
+
 ip_meta.city -> Ashburn
+
 ip_meta.country -> United States
+
 ip_meta.countryCode -> US
+
 ip_meta.lat -> 39.03
+
 ip_meta.lon -> -77.5
 
 ## Development
