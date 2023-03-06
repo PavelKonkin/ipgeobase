@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "ipgeobase/version"
-
+# main module for ipgeobase gem
 module Ipgeobase
   class Error < StandardError; end
 

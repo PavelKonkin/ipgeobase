@@ -11,7 +11,11 @@ gem "minitest", "~> 5.0"
 
 gem "rubocop", "~> 1.21"
 
+gem "rubocop-rake"
+
+gem "rubocop-minitest"
+
 group :test do
-  gem 'simplecov'
+  gem "simplecov"
   gem "webmock"
 end
