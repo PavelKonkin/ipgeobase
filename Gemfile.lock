@@ -12,9 +12,17 @@ GEM
     crack (0.4.5)
       rexml
     docile (1.4.0)
+    happymapper (0.5.0)
+      libxml-ruby (~> 2.9)
     hashdiff (1.0.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     json (2.6.3)
+    libxml-ruby (2.9.0)
+    mini_mime (1.1.2)
     minitest (5.18.0)
+    multi_xml (0.6.0)
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
@@ -57,6 +65,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  addressable
+  happymapper
+  httparty
   ipgeobase!
   minitest (~> 5.0)
   rake (~> 13.0)

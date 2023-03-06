@@ -15,6 +15,12 @@ gem "rubocop-rake"
 
 gem "rubocop-minitest"
 
+gem "httparty"
+
+gem "happymapper"
+
+gem "addressable"
+
 group :test do
   gem "simplecov"
   gem "webmock"
