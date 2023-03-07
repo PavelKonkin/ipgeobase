@@ -7,12 +7,11 @@ require "happymapper"
 module Ipgeobase
   include HTTParty
   include HappyMapper
-  IP_IP_ADDRESS = "http://ip-api.com"
-  RESPONSE_FORMAT = "xml"
-  RESPONSE_QUERY_KEY = "query"
+  IP_API_ADDRESS = "http://ip-api.com"
+  RESPONSE_FORMAT = "json"
   class Error < StandardError; end
 
   def lookup(ip_address)
-    HTTParty.get("#{IP_IP_ADDRESS}/#{RESPONSE_FORMAT}/#{ip_address}")[RESPONSE_QUERY_KEY]
+    HTTParty.get("#{IP_API_ADDRESS}/#{RESPONSE_FORMAT}/#{ip_address}").to_hash
   end
 end

@@ -8,4 +8,3 @@ require "ipgeobase"
 
 require "minitest/autorun"
 require "webmock/minitest"
-WebMock.allow_net_connect!
